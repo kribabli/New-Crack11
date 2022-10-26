@@ -12,6 +12,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.yoyoiq.KYC.KYCActivity;
 import com.example.yoyoiq.KYC.ShowKYCDetails;
 import com.example.yoyoiq.KYC.ViewKycResponse;
@@ -37,8 +42,10 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -56,6 +63,7 @@ public class AddCash extends AppCompatActivity implements PaymentStatusListener 
     String Pancard = "";
     String BankAccount = "",winAmount="";
     boolean status = false;
+    String url="http://adminapp.tech/crack11/ItsMe/all_apis.php?func=withdraw_request";
     List<String> checkId = new ArrayList<>();
 
     @Override
@@ -199,6 +207,64 @@ public class AddCash extends AppCompatActivity implements PaymentStatusListener 
         });
 
         addCash.setOnClickListener(view -> addAmountValidation());
+
+        withdrawTv.setOnClickListener(view -> {
+            int winbalance= Integer.parseInt(winningsTV.getText().toString());
+            if(winningsTV.getText().toString().length()==0){
+                Toast.makeText(this, "You have not enough balance to withdraw.. ", Toast.LENGTH_SHORT).show();
+            }
+            else if(winbalance>=Integer.parseInt(winAmount)){
+                handleWithdrawAmount();
+            }
+            else {
+                Toast.makeText(this, "You have not enough balance to withdraw..", Toast.LENGTH_SHORT).show();
+            }
+
+
+        });
+    }
+
+    private void handleWithdrawAmount() {
+        RequestQueue queue = Volley.newRequestQueue(AddCash.this);
+        common.setProgressDialog("","Please wait..",AddCash.this,AddCash.this);
+
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonObject=new JSONObject(response);
+                    if(jsonObject.getString("status").equalsIgnoreCase("true")){
+                        Toast.makeText(AddCash.this, ""+jsonObject.getString("short"), Toast.LENGTH_SHORT).show();
+                        common.closeDialog(AddCash.this);
+                    }
+                    else if(jsonObject.getString("status").equalsIgnoreCase("false")){
+                        Toast.makeText(AddCash.this, ""+jsonObject.getString("short"), Toast.LENGTH_SHORT).show();
+                        common.closeDialog(AddCash.this);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    common.closeDialog(AddCash.this);
+                }
+
+            }
+        }, new com.android.volley.Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                common.closeDialog(AddCash.this);
+
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("userid", sessionManager.getUserData().getUser_id());
+                return params;
+            }
+
+        };
+        queue.add(stringRequest);
+
+
     }
 
     private boolean addAmountValidation() {
