@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "15776641337",
+    "project_id": "crack11-a4ee2",
+    "storage_bucket": "crack11-a4ee2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15776641337:android:87d24791fa76bcdcbb78e8",
+        "android_client_info": {
+          "package_name": "com.example.crack11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15776641337-7k4lsveqnis63kp8mckojkalbh0tqf4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWviUYeyFcqgCHRaaMwKNqxdNcbb01ZAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15776641337-7k4lsveqnis63kp8mckojkalbh0tqf4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

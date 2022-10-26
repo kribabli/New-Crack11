@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yoyoiq">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/crack11_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/crack11_logo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YoYoIq"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".InviteFriends"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".InSideAddCashLeaderboard.WhenLiveTeamPreview"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".UpdatePassword.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".WalletPackage.UPIActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".LeaderboardActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".OnlyTeamPreView.MyTeamPreview"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".InSideScoreActivity.ScoresActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".HowToPlay"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".OnlyTeamPreView.OnlyTeamPreview"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".ChatFirebase.ChatActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".ChatFirebase.DirectChatActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".KYC.ShowKYCDetails"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".CreateTeamActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyPolicy.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".ContestActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".KYC.KYCActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterDetails"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".FrontActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContestWinners"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".CustomDialog"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".TeamPreviewActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentOptions"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".WalletPackage.RecentTransactions"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".WalletPackage.AddCash"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".SelectTeams"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".AddCashActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".MyCoupons"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".PointSystem"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
+        <service
+            android:name=".ChatFirebase.MessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notification"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

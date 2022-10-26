@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/drawable/border_light_gray1.xml" value="0.1" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/activity_about_us.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/activity_add_cash.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/activity_add_cash2.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/activity_change_password.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/activity_chat.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/activity_invite_friends.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/activity_kycactivity.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/activity_team_preview.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/banner_layout.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/black_ground.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/contest_winners_cardview.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/fragment_leaderboard.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/fragment_live_leaderboard.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/fragment_live_my_team.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/fragment_upcoming_match.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/fragment_w_k.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/fragment_winners.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/leaderboard_user_ranking_list.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/transaction_history_layout.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/user_ranking_list.xml" value="0.5" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/user_row.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Ravi/Desktop/Babli Office Projects/After Sir Modify/Crack11/app/src/main/res/layout/winning_list.xml" value="0.19895833333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
